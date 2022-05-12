@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1450px;
+    margin :auto ;
+}
+.game{
+    max-width: 1450px;
+    margin : 0 auto ;
+}
+.game .user {
+    max-width: 800px;
+    margin : 1rem auto;
+}
+.game .user .header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translateX(-50%); */
+}
+.game .user .header img{
+    width: 32px;
+}
+
+.game .user .body {
+    /* width: inherit; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.game .user .body img{
+    width: 90px;
+    margin-right: -40px;
+    cursor: pointer;
+    border-radius: 5px;
+    border : 2px solid #eee;
+}
+.game .user .body img:active {
+    z-index:2;
+    /* pointer-events: none; */
+}
+
+/* // table  */
+
+
+.game .table {
+    position: relative;
+    max-width: 1250px;
+    margin : 5rem auto;
+    display: flex;
+}
+.game .table .remaining-deck {
+    width: 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.game .table .remaining-deck span{
+    position: relative;
+    left : -50%;
+    /* top : 10%; */
+    transform: translate(-50%,-50%);
+    color : black;
+    font-size: 1.3rem;
+    font-weight: 800;
+}    
+.game .table .remaining-deck img {
+    width: 80px;
+}
+.game .table .discarded-deck {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .table .slots span{
+    display: inline-block;
+    width: 80px;
+    height: 120px;
+    /* border: 2px solid #eee; */
+    position: relative;
+}
+.game .table span img{
+    width: 80px;
+    height: 120px;
+}
+.game .table .slots span:nth-child(even){
+    margin-left: -50px;
+    margin-right: .4rem;
+}
+
+
+
+button{
+    font-size: 12px;
+    /* padding : .5rem .5rem; */
+    background-color: #6A67CE;
+    border : 3px solid #6A67CE; 
+    border-radius : 5px;
+    color : white;
+    cursor:pointer;
+    margin-left: .5rem;
+}
+
+
+.card-animation{
+    animation: card-animation 1s linear ;
+}
+
+@keyframes card-animation {
+    0%{
+        transform : translateY(-50px);
+    }
+    25%{
+        transform : translateY(-40px);
+    }
+    50%{
+        transform : translateY(-30px);
+    }
+    75%{
+        transform : translateX(-20px);
+    }
+    100%{
+        transform : translateX(0);
+    }
+}

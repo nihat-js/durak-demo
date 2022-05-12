@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game">
+            <div class="playertwo user">
+                <div class="header">
+                    <span class="info" > Bot </span>  <span> <img src="images/player-one.png" alt="" srcset=""> </span>  <span class="timer">  </span> <button class="buttons" > .. </button>
+                </div>
+                <div class="body"></div>
+            </div>
+            <div class="table">
+                <div class="remaining-deck"> <img src="images/closed-card.jpg" alt="" srcset=""> <span>   </span> </div>
+                <div class="slots">
+                        <span id="slot_1"   ondrop="drop(event,1)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_2"  ondrop="drop(event,2)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_3"  ondrop="drop(event,3)" ondragover="event.preventDefault();"></span>
+                        <span id="slot_4"  ondrop="drop(event,4)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_5" ondrop="drop(event,5)" ondragover="event.preventDefault();"  ></span>
+                        <span id="slot_6"  ondrop="drop(event,6)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_7" ondrop="drop(event,7)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_8"  ondrop="drop(event,8)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_9"  ondrop="drop(event,9)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_10"ondrop="drop(event,10)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_11" ondrop="drop(event,11)" ondragover="event.preventDefault();" ></span>
+                        <span id="slot_12" ondrop="drop(event,12)" ondragover="event.preventDefault();" ></span>  
+                </div>
+                <div class="discarded-deck"> 0 </div>
+            </div>
+            <div class="user playerone" > 
+                <div class="body"></div>
+                <div class="header">
+                    <span class="info" > Nihat  </span>  <span> <img src="images/player-one.png" alt="" srcset=""> </span>  <span class="timer">  </span>  <button> .. </button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <script src="main.js"></script>
+</body>
+</html>
